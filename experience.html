@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#0c1b36"><title>梵高星空</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<div id="poster"></div><canvas id="world" aria-label="梵高星空三维场景"></canvas><div class="vignette"></div><div id="pulse"></div>
+<section id="intro" aria-labelledby="title"><div class="intro-copy"><h1 id="title">梵高星空</h1><button id="start" class="primary" disabled>进入</button><div id="loading" role="status">正在展开星夜…</div></div></section>
+<div id="hud"><header><button id="sound" class="icon-btn" aria-label="切换音乐" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 9v6h4l5 4V5L8 9H4zM17 8c3 2 3 6 0 8M20 5c5 4 5 10 0 14"/></svg></button><button id="settings" class="icon-btn" aria-label="打开设置">···</button></header>
+<div class="actions"><button id="locations" aria-label="切换观景点"><span class="action-symbol">⌖</span><small>换景</small></button><button id="walk" aria-label="按住漫步"><span class="action-symbol">↑</span><small>漫步</small></button><button id="photo" aria-label="拍下当前画面"><span class="action-symbol">▣</span><small>拍照</small></button></div></div>
+<div id="notice" role="status" aria-live="polite"></div>
+<section id="views" class="sheet" aria-label="选择观景点"><div class="sheet-head"><h2>换景</h2><button id="view-close" class="icon-btn" aria-label="关闭观景点">×</button></div><div class="view-grid"><button data-view="0" class="selected">村庄</button><button data-view="1">柏树</button><button data-view="2">山坡</button></div></section>
+<section id="settings-panel" class="sheet" aria-label="设置"><div class="sheet-head"><h2>设置</h2><button id="help-close" class="icon-btn" aria-label="关闭设置">×</button></div>
+<div class="settings-row"><span>随手机转动</span><button id="motion" aria-pressed="false">开启</button></div>
+<div class="settings-row"><span>音乐</span><span id="music-status">Vincent</span></div><div class="settings-row"><span>画质</span><select id="quality" aria-label="画面质量"><option value="1">原版</option><option value="0">流畅</option></select></div><div class="settings-row"><span>自动观赏</span><button id="tour" aria-pressed="false">巡游</button></div><div class="settings-row"><span>天空</span><button id="pause" aria-pressed="false">暂停</button></div></section>
+<section id="photo-panel" class="sheet photo-sheet" aria-label="星夜照片"><div class="sheet-head"><h2>这一刻</h2><button id="photo-close" class="icon-btn" aria-label="关闭照片">×</button></div><img id="photo-image" alt="你拍下的梵高星空"><div class="photo-actions"><button id="save" class="primary">保存</button><button id="share">分享</button></div><p id="photo-hint" class="help"></p></section>
+<script src="./texture.js"></script>
+<script src="./data-0.js"></script>
+<script src="./data-1.js"></script>
+<script src="./data-2.js"></script>
+<script src="./data-3.js"></script>
+<script src="./data-4.js"></script>
+<script src="./music-0.js"></script>
+<script src="./music-1.js"></script>
+<script src="./music-2.js"></script>
+<script src="./music-3.js"></script>
+<script src="./music-4.js"></script>
+<script src="./music-5.js"></script>
+<script src="./app.js"></script>
+</body></html>
